@@ -29,11 +29,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+  return [a*b, `The product of ${a} and ${b} is ${a * b}.`];
+  // what data type is that? an array of 2 things! those square brackets
+  //    at index 0 is a number, at index 1 is a string
+  // what's happening with that string thing?
+  //    instead of single quotes and plus signs for concatenation,
+  //    using dollar sign and curly brace to pull in those variables
+  // template literal: uses backticks instead of single quotes
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
